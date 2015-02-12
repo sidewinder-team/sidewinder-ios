@@ -44,7 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
-        JobSubscriptionServiceInstance = JobSubscriptionService(DeviceToken: NSData())
+        JobSubscriptionServiceInstance = JobSubscriptionService(DeviceToken: NSData()) // bad!
         println("registration error: \(error)")
     }
 

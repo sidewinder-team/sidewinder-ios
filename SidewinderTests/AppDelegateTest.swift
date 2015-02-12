@@ -11,9 +11,8 @@ class AppDelegateTest: QuickSpec {
                 if let delegate = UIApplication.sharedApplication().delegate {
                     let data = "DeviceToken#1".dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: true)
                     delegate.application?(app, didRegisterForRemoteNotificationsWithDeviceToken: data!)
-                    
-                    expect(JobSubscriptionServiceInstance).toNot(beNil())
-                    expect(JobSubscriptionServiceInstance!.DeviceToken).to(equal(data))
+
+                    expect(JobSubscriptionServiceInstance?.DeviceToken).to(equal(data))
                 }
             }
         }
