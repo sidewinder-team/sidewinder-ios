@@ -1,0 +1,6 @@
+framework module Quick {
+  umbrella header "Pods-SidewinderTests-Quick-umbrella.h"
+
+  export *
+  module * { export * }
+}
