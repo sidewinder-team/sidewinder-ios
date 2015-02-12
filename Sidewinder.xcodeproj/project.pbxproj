@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		171BF1C11B877D7D2E6C0435 /* Pods_SidewinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BFF10C2FB80AF5020794ECD /* Pods_SidewinderTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		370F126D1A8C3303005A1341 /* DoSomething.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370F126C1A8C3303005A1341 /* DoSomething.swift */; };
+		370F126D1A8C3303005A1341 /* AppDelegateTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370F126C1A8C3303005A1341 /* AppDelegateTest.swift */; };
+		370F126F1A8C4A90005A1341 /* JobSubscriptionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370F126E1A8C4A90005A1341 /* JobSubscriptionService.swift */; };
 		37AF241A1A8C22C600BCA497 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AF24191A8C22C600BCA497 /* AppDelegate.swift */; };
 		37AF241C1A8C22C600BCA497 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AF241B1A8C22C600BCA497 /* ViewController.swift */; };
 		37AF241F1A8C22C600BCA497 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37AF241D1A8C22C600BCA497 /* Main.storyboard */; };
@@ -28,7 +29,8 @@
 
 /* Begin PBXFileReference section */
 		1BFF10C2FB80AF5020794ECD /* Pods_SidewinderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SidewinderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		370F126C1A8C3303005A1341 /* DoSomething.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoSomething.swift; sourceTree = "<group>"; };
+		370F126C1A8C3303005A1341 /* AppDelegateTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateTest.swift; sourceTree = "<group>"; };
+		370F126E1A8C4A90005A1341 /* JobSubscriptionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobSubscriptionService.swift; sourceTree = "<group>"; };
 		37AF24141A8C22C600BCA497 /* Sidewinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sidewinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37AF24181A8C22C600BCA497 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37AF24191A8C22C600BCA497 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				37AF24201A8C22C600BCA497 /* Images.xcassets */,
 				37AF24221A8C22C600BCA497 /* LaunchScreen.xib */,
 				37AF24171A8C22C600BCA497 /* Supporting Files */,
+				370F126E1A8C4A90005A1341 /* JobSubscriptionService.swift */,
 			);
 			path = Sidewinder;
 			sourceTree = "<group>";
@@ -114,7 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				37AF242D1A8C22C600BCA497 /* Supporting Files */,
-				370F126C1A8C3303005A1341 /* DoSomething.swift */,
+				370F126C1A8C3303005A1341 /* AppDelegateTest.swift */,
 			);
 			path = SidewinderTests;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				370F126F1A8C4A90005A1341 /* JobSubscriptionService.swift in Sources */,
 				37AF241C1A8C22C600BCA497 /* ViewController.swift in Sources */,
 				37AF241A1A8C22C600BCA497 /* AppDelegate.swift in Sources */,
 			);
@@ -296,7 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				370F126D1A8C3303005A1341 /* DoSomething.swift in Sources */,
+				370F126D1A8C3303005A1341 /* AppDelegateTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
