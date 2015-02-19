@@ -15,6 +15,7 @@
 		37AF241F1A8C22C600BCA497 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37AF241D1A8C22C600BCA497 /* Main.storyboard */; };
 		37AF24211A8C22C600BCA497 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37AF24201A8C22C600BCA497 /* Images.xcassets */; };
 		37AF24241A8C22C600BCA497 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37AF24221A8C22C600BCA497 /* LaunchScreen.xib */; };
+		C91EE8531A95809A00843624 /* JobSubscriptionServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91EE8521A95809A00843624 /* JobSubscriptionServiceTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		37AF24291A8C22C600BCA497 /* SidewinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SidewinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37AF242E1A8C22C600BCA497 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		905CEB1D1947D548EE8BCDEA /* Pods-SidewinderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SidewinderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SidewinderTests/Pods-SidewinderTests.release.xcconfig"; sourceTree = "<group>"; };
+		C91EE8521A95809A00843624 /* JobSubscriptionServiceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobSubscriptionServiceTest.swift; sourceTree = "<group>"; };
 		F67DC07546F6B320AEB47022 /* Pods-SidewinderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SidewinderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SidewinderTests/Pods-SidewinderTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +120,7 @@
 			children = (
 				37AF242D1A8C22C600BCA497 /* Supporting Files */,
 				370F126C1A8C3303005A1341 /* AppDelegateTest.swift */,
+				C91EE8521A95809A00843624 /* JobSubscriptionServiceTest.swift */,
 			);
 			path = SidewinderTests;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C91EE8531A95809A00843624 /* JobSubscriptionServiceTest.swift in Sources */,
 				370F126D1A8C3303005A1341 /* AppDelegateTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
