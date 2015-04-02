@@ -16,6 +16,10 @@
 		37AF24211A8C22C600BCA497 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37AF24201A8C22C600BCA497 /* Images.xcassets */; };
 		37AF24241A8C22C600BCA497 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37AF24221A8C22C600BCA497 /* LaunchScreen.xib */; };
 		C91EE8531A95809A00843624 /* JobSubscriptionServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91EE8521A95809A00843624 /* JobSubscriptionServiceTest.swift */; };
+		C97904D41ACCB81500CB7151 /* RepoAssessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97904D31ACCB81500CB7151 /* RepoAssessor.swift */; };
+		C97904D61ACCB82B00CB7151 /* RepoAssessorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97904D51ACCB82B00CB7151 /* RepoAssessorTest.swift */; };
+		C97904D81ACCC03200CB7151 /* MockHttpGarçon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97904D71ACCC03200CB7151 /* MockHttpGarçon.swift */; };
+		CA03FB60271DF2154F10079D /* Pods_Sidewinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D61B191836797980333F5D /* Pods_Sidewinder.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +46,13 @@
 		37AF24291A8C22C600BCA497 /* SidewinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SidewinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37AF242E1A8C22C600BCA497 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		905CEB1D1947D548EE8BCDEA /* Pods-SidewinderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SidewinderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SidewinderTests/Pods-SidewinderTests.release.xcconfig"; sourceTree = "<group>"; };
+		B0D61B191836797980333F5D /* Pods_Sidewinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sidewinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C91EE8521A95809A00843624 /* JobSubscriptionServiceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobSubscriptionServiceTest.swift; sourceTree = "<group>"; };
+		C97904D31ACCB81500CB7151 /* RepoAssessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoAssessor.swift; sourceTree = "<group>"; };
+		C97904D51ACCB82B00CB7151 /* RepoAssessorTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoAssessorTest.swift; sourceTree = "<group>"; };
+		C97904D71ACCC03200CB7151 /* MockHttpGarçon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MockHttpGarçon.swift"; sourceTree = "<group>"; };
+		CC97913AD7E99BF780E80CEA /* Pods-Sidewinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sidewinder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sidewinder/Pods-Sidewinder.debug.xcconfig"; sourceTree = "<group>"; };
+		DD0FABAE5CE0C9A46DD33205 /* Pods-Sidewinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sidewinder.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sidewinder/Pods-Sidewinder.release.xcconfig"; sourceTree = "<group>"; };
 		F67DC07546F6B320AEB47022 /* Pods-SidewinderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SidewinderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SidewinderTests/Pods-SidewinderTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -51,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA03FB60271DF2154F10079D /* Pods_Sidewinder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				1BFF10C2FB80AF5020794ECD /* Pods_SidewinderTests.framework */,
+				B0D61B191836797980333F5D /* Pods_Sidewinder.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -103,6 +115,7 @@
 				37AF24221A8C22C600BCA497 /* LaunchScreen.xib */,
 				37AF24171A8C22C600BCA497 /* Supporting Files */,
 				370F126E1A8C4A90005A1341 /* JobSubscriptionService.swift */,
+				C97904D31ACCB81500CB7151 /* RepoAssessor.swift */,
 			);
 			path = Sidewinder;
 			sourceTree = "<group>";
@@ -121,6 +134,8 @@
 				37AF242D1A8C22C600BCA497 /* Supporting Files */,
 				370F126C1A8C3303005A1341 /* AppDelegateTest.swift */,
 				C91EE8521A95809A00843624 /* JobSubscriptionServiceTest.swift */,
+				C97904D51ACCB82B00CB7151 /* RepoAssessorTest.swift */,
+				C97904D71ACCC03200CB7151 /* MockHttpGarçon.swift */,
 			);
 			path = SidewinderTests;
 			sourceTree = "<group>";
@@ -138,6 +153,8 @@
 			children = (
 				F67DC07546F6B320AEB47022 /* Pods-SidewinderTests.debug.xcconfig */,
 				905CEB1D1947D548EE8BCDEA /* Pods-SidewinderTests.release.xcconfig */,
+				CC97913AD7E99BF780E80CEA /* Pods-Sidewinder.debug.xcconfig */,
+				DD0FABAE5CE0C9A46DD33205 /* Pods-Sidewinder.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -149,9 +166,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37AF24331A8C22C600BCA497 /* Build configuration list for PBXNativeTarget "Sidewinder" */;
 			buildPhases = (
+				88E63F98F24704CCB0203416 /* Check Pods Manifest.lock */,
 				37AF24101A8C22C600BCA497 /* Sources */,
 				37AF24111A8C22C600BCA497 /* Frameworks */,
 				37AF24121A8C22C600BCA497 /* Resources */,
+				B49A5BFE65D02C3AB83B9F0B /* Embed Pods Frameworks */,
+				A21235D1053EABD834EAD5FE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -241,6 +261,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		88E63F98F24704CCB0203416 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A21235D1053EABD834EAD5FE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sidewinder/Pods-Sidewinder-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B3893BF75E78D8C1B19BFDF5 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -254,6 +304,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SidewinderTests/Pods-SidewinderTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B49A5BFE65D02C3AB83B9F0B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sidewinder/Pods-Sidewinder-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B8F41C972A0FC2C5F8A68D3E /* Embed Pods Frameworks */ = {
@@ -295,6 +360,7 @@
 			files = (
 				370F126F1A8C4A90005A1341 /* JobSubscriptionService.swift in Sources */,
 				37AF241C1A8C22C600BCA497 /* ViewController.swift in Sources */,
+				C97904D41ACCB81500CB7151 /* RepoAssessor.swift in Sources */,
 				37AF241A1A8C22C600BCA497 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,8 +369,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C97904D61ACCB82B00CB7151 /* RepoAssessorTest.swift in Sources */,
 				C91EE8531A95809A00843624 /* JobSubscriptionServiceTest.swift in Sources */,
 				370F126D1A8C3303005A1341 /* AppDelegateTest.swift in Sources */,
+				C97904D81ACCC03200CB7151 /* MockHttpGarçon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +487,7 @@
 		};
 		37AF24341A8C22C600BCA497 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC97913AD7E99BF780E80CEA /* Pods-Sidewinder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -432,6 +501,7 @@
 		};
 		37AF24351A8C22C600BCA497 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD0FABAE5CE0C9A46DD33205 /* Pods-Sidewinder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
