@@ -18,7 +18,7 @@ class AppDelegateTest: QuickSpec {
     }
 }
 
-public func expectExists<T>(potentialValue: T?, then: (value: T) -> Void, file: String = __FILE__, line: UInt = __LINE__) {
+public func expectExists<T>(potentialValue: T?,  file: String = __FILE__, line: UInt = __LINE__, then: (value: T) -> Void) {
     if let value = potentialValue {
         then(value: value)
     } else {
