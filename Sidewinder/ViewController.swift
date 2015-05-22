@@ -13,11 +13,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet
     var tableView: UITableView!
     
-    let stuff = ["Harry", "Ron", "Hermione"]
+    var stuff = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let ass = RepoAssessor(DeluxeHttpGarçon())
+        let assessment = ass.assessmentOfRepo(GitHubRepo(owner: "sidewinder-team", name: "sidewinder-ios"))
+        
+        
+        stuff.append(assessment.rawValue)
     }
 
     override func didReceiveMemoryWarning() {

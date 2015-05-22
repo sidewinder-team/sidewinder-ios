@@ -3,12 +3,22 @@ import SwiftyJSON
 
 
 public protocol HttpGarçon {
-     func Get(url: String) -> NSData?
+    func Get(url: String) -> NSData?
 }
 
 
-public enum RepoAssessment {
-    case Success, Failure, Error, Pending, Unknown, Unavailable
+public enum RepoAssessment: String, Printable {
+    case
+    Success = "Success",
+    Failure = "Failure",
+    Error = "Error",
+    Pending = "Pending",
+    Unknown = "Unknown",
+    Unavailable = "Unavailable"
+    
+    public var description : String {
+        return self.rawValue
+    }
 }
 
 public struct GitHubRepo {
@@ -22,9 +32,9 @@ public struct GitHubRepo {
 }
 
 public class RepoAssessor {
-
+    
     let httpGarçon : HttpGarçon
-
+    
     public init(_ httpGarçon: HttpGarçon) {
         self.httpGarçon = httpGarçon
     }
@@ -49,7 +59,7 @@ public class RepoAssessor {
             default:
                 return .Unknown
             }
-
+            
         } else {
             return .Unavailable
         }

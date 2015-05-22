@@ -10,6 +10,7 @@
 		171BF1C11B877D7D2E6C0435 /* Pods_SidewinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BFF10C2FB80AF5020794ECD /* Pods_SidewinderTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		370F126D1A8C3303005A1341 /* AppDelegateTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370F126C1A8C3303005A1341 /* AppDelegateTest.swift */; };
 		370F126F1A8C4A90005A1341 /* JobSubscriptionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370F126E1A8C4A90005A1341 /* JobSubscriptionService.swift */; };
+		37890B011B0ECEC70062FCB7 /* DeluxeHttpGarçon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37890B001B0ECEC70062FCB7 /* DeluxeHttpGarçon.swift */; };
 		37AF241A1A8C22C600BCA497 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AF24191A8C22C600BCA497 /* AppDelegate.swift */; };
 		37AF241C1A8C22C600BCA497 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AF241B1A8C22C600BCA497 /* ViewController.swift */; };
 		37AF241F1A8C22C600BCA497 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37AF241D1A8C22C600BCA497 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 		1BFF10C2FB80AF5020794ECD /* Pods_SidewinderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SidewinderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		370F126C1A8C3303005A1341 /* AppDelegateTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateTest.swift; sourceTree = "<group>"; };
 		370F126E1A8C4A90005A1341 /* JobSubscriptionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobSubscriptionService.swift; sourceTree = "<group>"; };
+		37890B001B0ECEC70062FCB7 /* DeluxeHttpGarçon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DeluxeHttpGarçon.swift"; sourceTree = "<group>"; };
 		37AF24141A8C22C600BCA497 /* Sidewinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sidewinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37AF24181A8C22C600BCA497 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37AF24191A8C22C600BCA497 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				37AF24171A8C22C600BCA497 /* Supporting Files */,
 				370F126E1A8C4A90005A1341 /* JobSubscriptionService.swift */,
 				C97904D31ACCB81500CB7151 /* RepoAssessor.swift */,
+				37890B001B0ECEC70062FCB7 /* DeluxeHttpGarçon.swift */,
 			);
 			path = Sidewinder;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 			files = (
 				370F126F1A8C4A90005A1341 /* JobSubscriptionService.swift in Sources */,
 				37AF241C1A8C22C600BCA497 /* ViewController.swift in Sources */,
+				37890B011B0ECEC70062FCB7 /* DeluxeHttpGarçon.swift in Sources */,
 				C97904D41ACCB81500CB7151 /* RepoAssessor.swift in Sources */,
 				37AF241A1A8C22C600BCA497 /* AppDelegate.swift in Sources */,
 			);
