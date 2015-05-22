@@ -13,32 +13,37 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet
     var tableView: UITableView!
     
-    var stuff = [String]()
-
+    var repositories = [
+        GitHubRepo(owner: "sidewinder-team", name: "sidewinder-server"),
+        GitHubRepo(owner: "sidewinder-team", name: "sidewinder-ios"),
+    ]
+    
+    var results = [(GitHubRepo, RepoAssessment)]()
+    
+    let repoAssessor = RepoAssessor(DeluxeHttpGarçon())
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let ass = RepoAssessor(DeluxeHttpGarçon())
-        let assessment = ass.assessmentOfRepo(GitHubRepo(owner: "sidewinder-team", name: "sidewinder-ios"))
-        
-        
-        stuff.append(assessment.rawValue)
+        for repo in repositories {
+            let assessment = repoAssessor.assessmentOfRepo(repo)
+            results.append((repo, assessment))
+        }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return stuff.count
+        return results.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("RepoStatusCell", forIndexPath: indexPath) as! UITableViewCell
         
-        let value = stuff[indexPath.row]
-        cell.textLabel?.text = value
+        let data = results[indexPath.row]
+        cell.textLabel?.text = "\(data.0.owner)/\(data.0.name) : \(data.1.description)"
         return cell
     }
     
@@ -46,7 +51,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         
     }
-
-
+    
+    
 }
 
