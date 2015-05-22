@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AFD3DA90073E17FD9B9F93F8"
+               BlueprintIdentifier = "B675EF7F757FCF898BF3875D"
                BuildableName = "Nimble.framework"
                BlueprintName = "Pods-SidewinderTests-Nimble"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">
@@ -42,7 +42,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C5D54682105462F16A084A10"
+               BlueprintIdentifier = "7145DBCA9A7B653E2437C949"
                BuildableName = "Quick.framework"
                BlueprintName = "Pods-SidewinderTests-Quick"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">
@@ -100,7 +100,8 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "37AF24131A8C22C600BCA497"
@@ -118,7 +119,8 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "37AF24131A8C22C600BCA497"
