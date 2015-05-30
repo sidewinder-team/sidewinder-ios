@@ -57,7 +57,13 @@ class RepoAssessorTest: QuickSpec {
             }
             
             it("when there are no statuses for that context in the repo an Unknown will be returned") {
+                let jsonResponse = "[]"
                 
+                let repo = GitHubRepo(owner: "sidewinder-team", name: "sidewinder-server")
+                httpGuy.UrlResponses["https://api.github.com/repos/\(repo.owner)/\(repo.name)/statuses/master"] = toData(jsonResponse)
+                
+                let status = assessor.assessmentOfRepo(repo)
+                expect(status).to(equal(RepoAssessment.Unknown))
             }
         }
     }
